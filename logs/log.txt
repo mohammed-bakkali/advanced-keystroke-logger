@@ -49,3 +49,9 @@ mohammed bakkali  [shift] @@2002
  [ctrl_l]  [ctrl_l]  send  [backspace]  [backspace]  [backspace]  [backspace]  [backspace] how to send imaf to email 
 
 ========================================
+
+[+] Log Time: 2025-05-23 15:58:41
+----------------------------------------
+m
+
+========================================

