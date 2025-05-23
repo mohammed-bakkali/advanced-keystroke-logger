@@ -4,3 +4,48 @@
 xxxxxxxxxxxxx xxxxxxxxxx 0867
 ========================================
 
+
+[+] Log Time: 2025-05-23 14:10:11
+----------------------------------------
+hh [cmd] dchop 2 geme ggg kl in pot jjj
+========================================
+
+[+] Log Time: 2025-05-23 14:11:18
+----------------------------------------
+ [ctrl_l]  [backspace]  [ctrl_l]  [backspace]  [ctrl_l]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  [cmd]  
+========================================
+
+[+] Log Time: 2025-05-23 15:05:50
+----------------------------------------
+mohammed bakkali
+
+
+
+========================================
+
+[+] Log Time: 2025-05-23 15:06:54
+----------------------------------------
+ [right] , 
+ [backspace]  [backspace] ret [backspace] turn  [ctrl_l]  [ctrl_l]  [ctrl_l]  [ctrl_l]  [ctrl_l]  [ctrl_l]  [ctrl_l]  [ctrl_l] 
+
+========================================
+
+[+] Log Time: 2025-05-23 15:29:17
+----------------------------------------
+mohammed bakkali  [shift] @@2002
+
+
+
+
+========================================
+
+[+] Log Time: 2025-05-23 15:30:20
+----------------------------------------
+ [backspace]   [caps_lock] t [caps_lock] ake  [ctrl_l]  [ctrl_l] 
+========================================
+
+[+] Log Time: 2025-05-23 15:31:23
+----------------------------------------
+ [ctrl_l]  [ctrl_l]  send  [backspace]  [backspace]  [backspace]  [backspace]  [backspace] how to send imaf to email 
+
+========================================

