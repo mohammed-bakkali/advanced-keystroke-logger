@@ -1,7 +1,3 @@
-The issue you're seeing — `Error in user YAML: found character that cannot start any token...` — is likely because of a **formatting problem in your Markdown code block**. Specifically:
-
-You are using **four backticks (` ```` `)** to open the code block but you never **closed** it properly — the extra backticks confused the Markdown/YAML parser.
-
 ---
 
 ### ✅ **Corrected Version**
