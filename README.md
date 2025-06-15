@@ -1,8 +1,4 @@
 
-### ✅ **Corrected Version**
-
-Here's a corrected version of your `README.md` content with **proper code block usage**:
-
 ````markdown
 # 🛠️ KeyWatch – Advanced Keystroke Logger
 
