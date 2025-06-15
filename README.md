@@ -1,4 +1,12 @@
+The issue you're seeing — `Error in user YAML: found character that cannot start any token...` — is likely because of a **formatting problem in your Markdown code block**. Specifically:
+
+You are using **four backticks (` ```` `)** to open the code block but you never **closed** it properly — the extra backticks confused the Markdown/YAML parser.
+
 ---
+
+### ✅ **Corrected Version**
+
+Here's a corrected version of your `README.md` content with **proper code block usage**:
 
 ````markdown
 # 🛠️ KeyWatch – Advanced Keystroke Logger
@@ -104,4 +112,6 @@ KeyWatch/
 * **Name**: Mohammed Bakkali
 * **Website**: [mohammed-bakkali.netlify.app](https://mohammed-bakkali.netlify.app)
 
----
+```
+
+
