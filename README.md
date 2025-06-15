@@ -1,5 +1,3 @@
-Sure! Here's a full English version of the `README.md` file for your **KeyWatch – Advanced Keystroke Logger**, written professionally in a single file:
-
 ---
 
 ````markdown
@@ -104,15 +102,8 @@ KeyWatch/
 ## 👨‍💻 Author
 
 * **Name**: Mohammed Bakkali
-* **Email**: [mohammedbakkali807@gmail.com](mailto:mohammedbakkali807@gmail.com)
 * **Website**: [mohammed-bakkali.netlify.app](https://mohammed-bakkali.netlify.app)
-* **GitHub**: [github.com/MohammedBakkali](https://github.com/MohammedBakkali) *(optional)*
 
 ---
 
-```
-
----
-
-Would you like me to generate the actual `README.md` file content you can paste directly into your project? Or do you want to include a license section like MIT License too?
 ```
