@@ -104,6 +104,4 @@ KeyWatch/
 * **Name**: Mohammed Bakkali
 * **Website**: [mohammed-bakkali.netlify.app](https://mohammed-bakkali.netlify.app)
 
----
 
-```
