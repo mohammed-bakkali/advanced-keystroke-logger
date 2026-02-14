@@ -1,6 +1,6 @@
 
 ````markdown
-# 🛠️ KeyWatch – Advanced Keystroke Logger
+#  KeyWatch – Advanced Keystroke Logger
 
 **KeyWatch** is an advanced keylogger tool that records every keystroke made by a user and includes additional features like screen capturing and periodic email reporting.
 
